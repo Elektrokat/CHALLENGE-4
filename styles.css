@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+.image1{
+    width: 20em;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: -5px;
+}
+
+.order-summary{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0 0 10px 10px;
+    height: 21rem;
+    color: hsl(224, 23%, 55%);
+}
+
+.order-content{
+    width: 20em;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    padding: 30px 0 15px 0;
+    font-size: 1.3em;
+}
+
+.first-p{
+    font-size: 0.75em;
+    font-weight: 500;
+    padding: 0 25px;
+    line-height: 1.5em;
+}
+
+.icon1{
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.order-price{
+    width: 85%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: hsla(225, 100%, 94%, 0.2);
+    margin: 15px auto;
+    border-radius: 7px;
+}
+
+.music{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.second-p{
+    font-weight: 700;
+    font-size: 0.87em;
+    color: hsl(223, 47%, 23%);
+}
+
+.third-p{
+    font-weight: 500;
+    font-size: 0.82em;
+}
+
+.first-link{
+    font-weight: 700;
+    font-size: 0.75em;
+    padding-left: 50px;
+}
+
+.first-link:hover{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+}
+
+button{
+    width: 80%;
+    height: 2.4rem;
+    margin: 10px 0 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0 10px 10px 0 hsla(245, 75%, 52%, 0.2);
+    color: hsl(225, 100%, 98%);
+    font-weight: 700;
+    font-size: 0.75em;
+}
+
+button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.fourth-p{
+    font-size: 0.75em;
+    font-weight: 900;
+    padding: 5px;
+}
+
+.fourth-p:hover{
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+.attribution{
+    font-size: 0.7em; 
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.attribution a{
+    color: maroon;
+    text-decoration: none; 
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+}
+
+                    /* mobile view */
+
+@media screen and (max-width: 375px) {
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-color: hsl(225, 100%, 94%);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: top;
+    }
+
+    .image1{
+        width: 20em;
+        height: auto;
+        border-radius: 15px 15px 0 0;
+        margin-bottom: -5px;
+    }
+    
+    .order-summary{
+        background-color: hsl(225, 100%, 98%);
+        border-radius: 0 0 15px 15px;
+        height: 26rem;
+        color: hsl(224, 23%, 55%);
+    }
+    
+    .order-content{
+        width: 20em;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    h1{
+        color: hsl(223, 47%, 23%);
+        font-weight: 900;
+        padding: 35px 0 20px 0;
+        font-size: 1.5em;
+    }
+    
+    .first-p{
+        font-size: 1em;
+        font-weight: 500;
+        padding: 5px 25px 15px;
+        line-height: 1.5em;
+    }
+    
+    button{
+        width: 80%;
+        height: 3rem;
+        margin: 20px 0 25px;
+        border: none;
+        border-radius: 8px;
+        background-color: hsl(245, 75%, 52%);
+        box-shadow: 0 10px 10px 0 hsla(245, 75%, 52%, 0.2);
+        color: hsl(225, 100%, 98%);
+        font-weight: 700;
+        font-size: 0.87em;
+    }
+
+    .fourth-p{
+        font-size: 1em;
+        font-weight: 900;
+        padding: 10px;
+    }
+}
+
+                    /* desktop view */
+
+@media screen and (min-width: 376px) and (max-width: 1440px) {
+    
+    body{
+        background-image: url(images/pattern-background-desktop.svg);
+        background-color: hsl(225, 100%, 94%);
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: center;
+    }
+
+    .image1{
+        width: 20em;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+        margin-bottom: -5px;
+    }
+    
+    .order-summary{
+        background-color: hsl(225, 100%, 98%);
+        border-radius: 0 0 10px 10px;
+        height: 21rem;
+        color: hsl(224, 23%, 55%);
+    }
+    
+    .order-content{
+        width: 20em;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    h1{
+        color: hsl(223, 47%, 23%);
+        font-weight: 900;
+        padding: 30px 0 15px 0;
+        font-size: 1.3em;
+    }
+    
+    .first-p{
+        font-size: 0.75em;
+        font-weight: 500;
+        padding: 0 25px;
+        line-height: 1.5em;
+    }
+    
+    .icon1{
+        width: 2.5em;
+        height: 2.5em;
+    }
+    
+    .order-price{
+        width: 85%;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        background-color: hsla(225, 100%, 94%, 0.2);
+        margin: 15px auto;
+        border-radius: 7px;
+    }
+    
+    .music{
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+    
+    .second-p{
+        font-weight: 700;
+        font-size: 0.87em;
+        color: hsl(223, 47%, 23%);
+    }
+    
+    .third-p{
+        font-weight: 500;
+        font-size: 0.82em;
+    }
+    
+    .first-link{
+        font-weight: 700;
+        font-size: 0.75em;
+        padding-left: 50px;
+    }
+    
+    .first-link:hover{
+        text-decoration: none;
+        color: hsl(224, 23%, 55%);
+        cursor: pointer;
+    }
+    
+    button{
+        width: 80%;
+        height: 2.4rem;
+        margin: 10px 0 20px;
+        border: none;
+        border-radius: 8px;
+        background-color: hsl(245, 75%, 52%);
+        box-shadow: 0 10px 10px 0 hsla(245, 75%, 52%, 0.2);
+        color: hsl(225, 100%, 98%);
+        font-weight: 700;
+        font-size: 0.75em;
+    }
+    
+    button:hover{
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    
+    .fourth-p{
+        font-size: 0.75em;
+        font-weight: 900;
+        padding: 5px;
+    }
+    
+    .fourth-p:hover{
+        color: hsl(223, 47%, 23%);
+        cursor: pointer;
+    }
+    
+}
